@@ -38,7 +38,7 @@ def _get_api_key(var_name: str, local_default: str = "") -> str:
     return local_default.strip()
 
 
-SILICONFLOW_API_KEY = _get_api_key("SILICONFLOW_API_KEY", "sk-dyvpbnemoudxklelskmdetlnnjwhlkwfybqudtektlmyrqzv")
+SILICONFLOW_API_KEY = _get_api_key("SILICONFLOW_API_KEY", "")
 LingLeap_API_KEY = _get_api_key("LingLeap_API_KEY")
 GEMINI_API_KEY = _get_api_key("GEMINI_API_KEY")
 GPT_OSS_API_KEY = _get_api_key("GPT_OSS_API_KEY")
@@ -47,10 +47,7 @@ OPENAI_REQUEST_TIMEOUT = float(os.getenv("OPENAI_REQUEST_TIMEOUT", "180"))
 
 # Only models in this allowlist receive thinking-related extra_body params.
 THINKING_PARAM_ALLOWLIST = {
-    "deepseek-ai/DeepSeek-R1",
-    "Qwen/Qwen3.5-397B-A17B",
-    "Qwen/Qwen3-14B",
-    "Qwen/Qwen3.5-9B",
+    "",
 }
 
 def split_reasoning_and_answer_by_think(text: str) -> Tuple[str, str]:
