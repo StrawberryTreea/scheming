@@ -28,8 +28,8 @@ The benchmark is intended as a conservative stress test for making scheming-rela
 ```text
 .
 ├── data/
-│   ├── cn_selected_2000_0429.jsonl
-│   └── en_selected_2000_0429.jsonl
+│   ├── cn_selected_2000_07101400.jsonl
+│   └── en_selected_2000_07101400.jsonl
 ├── README.md
 ├── agents.py
 ├── client.py
